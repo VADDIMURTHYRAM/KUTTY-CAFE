@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUTTY CAFE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="Home">
+    <div class="page-grid">
+    <!-- HEADER -->
+    <header class="heading">
+        <img src="images/logo.svg" alt="Kutty Cafe Logo">
+        <div class="brand-text">
+            <h1>KUTTY CAFE</h1>
+            <h3>India's No.1 Cafe</h3>
+        </div>
+        <nav class="nav-links">
+            <a href="#Home">Home</a>
+            <a href="#" onclick="openMenu()">Menu</a>
+            <a href="#">Contact</a>
+            <a href="#">Order</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+            <section class="content">
+                <h2>About Us</h2>
+                <p>
+                    Kutty Cafe is a warm and welcoming place where you can enjoy
+                    authentic flavors, fresh coffee, and a cozy atmosphere.
+                </p>
+                <div class="image-gallery">
+                    <img src="images/cafe-photo.jpg" alt="Cafe image">
+                    <img src="images/global-locations.jpg" alt="Coffee">
+                </div>
+            </section>
+
+            <section class="content">
+                <h2>Our Specialties</h2>
+                <p>
+                    We specialize in premium coffee, traditional snacks,
+                    and handcrafted beverages made with love.
+                </p>
+                <div class="image-gallery">
+                <img src="images/menu-2.webp" alt="Special items">
+                <img src="images/menu-1.jpg" alt="coffee">
+                </div>
+            </section>
+
+            <section class="content">
+                <h2>Our Famous Customer</h2>
+                <p>
+                    <b>"The Ultimate Seal of Approval."</b> Even the world’s toughest critic finds his favorite flavors right here at Kutty Cafe.
+                </p>
+                <div class="chef-container">
+                    <img src="images/gordon.png" alt="CHEF">
+                    <span class="chef-name">Chef Gordon Ramsay</span>
+                </div>
+            </section>
+
+            <section class="content">
+                <h2>STAFF</h2>
+                <p>
+                    <b><i>You don't get see our staff everywhere.</b></i> They are the best at what they do.
+                </p>
+                <div class="chef-container">
+                    <img src="images/staff.webp" alt="CHEF">
+                    <span class="chef-name">The Heart of our Cafe!</span>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Kutty Cafe | All Rights Reserved</p>
+    </footer>
+
+    <div id="menuModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeMenu()">&times;</span>
+
+        <h2 style="text-align: center;">Our Menu 📖</h2>
+
+        <h3>☕ Beverages</h3>
+        <p>Filter Coffee – $40</p>
+        <p>Cappuccino – $20</p>
+        <p>Cold Coffee – $60</p>
+
+        <h3>🥪 Snacks</h3>
+        <p>Samosa – $30</p>
+        <p>Veg Sandwich – $50</p>
+        <p>Puff – $20</p>
+    </div>
+</div>
+
+<script>
+function openMenu() {
+    document.getElementById("menuModal").style.display = "block";
+}
+
+function closeMenu() {
+    document.getElementById("menuModal").style.display = "none";
+}
+
+// Close popup when clicking outside
+window.onclick = function(event) {
+    let modal = document.getElementById("menuModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector('.chat-support').addEventListener('click', function () {
+        alert("Hi! 👋 Customer support will be available soon.");
+    });
+});
+</script>
+<div class="chat-support">💬</div>
+
+</div>
+</body>
+
+</html>
