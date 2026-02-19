@@ -227,7 +227,7 @@ section {
     }
     
     .chef-container img {
-        margin: 0 auto; /* Centers the image when stacked */
+        margin: 0 auto;
     }
 }
 
@@ -238,15 +238,14 @@ section {
     }
 }
 
-/* Container to hold the image and name side-by-side */
+
 .chef-container {
     display: flex;
-    align-items: center; /* Centers the name vertically relative to the photo */
-    gap: 20px;           /* Adds space between the photo and the name */
+    align-items: center; 
+    gap: 20px;           
     margin-top: 15px;
 }
 
-/* Specific styling for the Chef's name */
 .chef-name {
     font-size: 24px;
     font-weight: bold;
@@ -255,23 +254,23 @@ section {
 }
 
 .image-gallery {
-    display: flex;       /* Puts them side-by-side */
-    gap: 15px;          /* Space between images */
+    display: flex;       
+    gap: 15px;          
     margin-top: 15px;
-    flex-wrap: wrap;    /* Allows them to stack on small mobile screens */
+    flex-wrap: wrap;    
 }
 
 .image-gallery img {
-    flex: 1;            /* Forces both images to take up equal width */
-    height: 250px;      /* Set a fixed height so they align perfectly */
-    width: 100%;        /* Allows flex to manage width */
-    object-fit:fill;  /* This is the magic: it crops the image to fit without stretching */
+    flex: 1;            
+    height: 250px;      
+    width: 100%;        
+    object-fit:fill;  
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
 }
 
-/* Maintain your hover effect */
+
 .image-gallery img:hover {
     transform: translateY(-10px);
 }
