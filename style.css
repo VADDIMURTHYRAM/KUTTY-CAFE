@@ -229,6 +229,12 @@ section {
     .chef-container img {
         margin: 0 auto;
     }
+
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+        border-radius: 15px;
+    }
 }
 
 /*Tablet Resolution*/
