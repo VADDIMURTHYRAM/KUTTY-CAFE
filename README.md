@@ -1,8 +1,8 @@
 # ☕ KUTTY CAFE - India's No.1 Cafe 
 
-An interactive, responsive front-end web application developed as an academic project. Kutty Cafe blends a modern, user-friendly digital cafe experience with the rich flavors of traditional South Indian street food and beverages.
+An interactive **frontend demo application** developed as an academic project to simulate a modern e-commerce cafe experience. This project showcases responsive UI design, dynamic state management, and user interaction using vanilla web technologies.
 
-🔗 **Live Demo:** [View Kutty Cafe Live](https://vaddimurthyram.github.io/KUTTY-CAFE/)
+🔗 **Live Interactive Demo:** [Launch Kutty Cafe](https://vaddimurthyram.github.io/KUTTY-CAFE/)
 
 ---
 
